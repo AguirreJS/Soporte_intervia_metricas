@@ -1,0 +1,321 @@
+
+
+
+body {
+  margin: 0; /* Elimina el margen predeterminado del body */
+  padding: 0; /* Elimina el relleno predeterminado del body */
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+ background-image: url(https://www.soporte.intervia.com.ar/img/imagen_fondo.jpg); 
+
+}
+
+
+
+
+
+
+
+
+.franja {
+  display: flex; /* Utiliza flexbox para alinear los elementos en la misma fila */
+  position: absolute;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente si es necesario */
+  height: 100vh; /* Esto es opcional, ajusta la altura según tus necesidades */
+  width: 100%;
+  background: rgb(21,45,223);
+  background: linear-gradient(304deg, rgba(212, 228, 236, 0.877) 15%, rgba(107,12,201,0.09576330532212884) 53%, rgba(171, 210, 224, 0.39) 89%);
+  box-shadow: 0px 2px 10px black;
+  height: 55px;
+  z-index: 15;
+
+}
+
+
+
+
+
+.date-picker-container {
+  display: inline-block; /* Utiliza flexbox para alinear los elementos en la misma fila */
+  flex-direction: column; /* Coloca los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
+}
+.date-picker-container h2 {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.date-picker {
+  display: inline-block; /* Utiliza flexbox para alinear los elementos en la misma fila */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin: 10px; /* Espacio entre los elementos si es necesario */
+}
+
+.date-picker  input { 
+  width: 70px;
+}
+.date-picker label {
+
+  margin-right: 20px;
+}
+
+/* Puedes agregar más estilos según tus necesidades */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+
+}
+
+
+.custom-button:hover {
+  background-color: #000000; /* Cambiar el color al pasar el mouse por encima */
+}
+
+.intervia {
+ 
+  width: 2%;
+  position: absolute; /* Establece la posición absoluta */
+  left: 10px; /* Coloca el elemento a la izquierda del contenedor */
+  top: 13px;
+
+}
+
+
+.Grafico1 {
+
+  width: 50%;
+  height: 50%;
+}
+
+
+
+.Grafico2 {
+
+  width: 80%;
+  height: 80%;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60% 40%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.izquierda {
+  background-color: #f0f0f0; 
+
+}
+
+.derecha {
+  background-color: #e0e0e0; /* Color de fondo para la parte derecha */
+}
+
+.incluir {
+
+  display: inline-block;
+  font-size: 12px;
+}
+
+.Tabla {
+  margin-top: 40px;
+  width: 70%;
+  margin-left: 15%;
+
+border: #000000 1px solid;
+background: linear-gradient(304deg, rgba(139, 184, 206, 0.877) 15%, rgba(177, 173, 233, 0.63) 53%, rgba(199, 226, 236, 0.76) 89%);
+}
+
+.Tabla h1 {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px rgb(0, 0, 0) ;
+
+
+}
+
+.TituloGrafica {
+  margin-top: 60px;
+  font-size: 17px;
+  background: linear-gradient(304deg, rgba(212, 228, 236, 0.877) 15%, rgba(107,12,201,0.09576330532212884) 53%, rgba(171, 210, 224, 0.39) 89%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px white ;
+
+
+}
+.TituloGrafica2 {
+  margin-top: 17px;
+  font-size: 17px;
+  background: linear-gradient(304deg, rgba(212, 228, 236, 0.877) 15%, rgba(107,12,201,0.09576330532212884) 53%, rgba(171, 210, 224, 0.39) 89%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px white ;
+
+
+}
+.Graf2 {
+  font-size: 17px;
+  background: linear-gradient(304deg, rgba(212, 228, 236, 0.877) 15%, rgba(107,12,201,0.09576330532212884) 53%, rgba(171, 210, 224, 0.39) 89%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-bottom: solid 1px white ;
+
+}
+
+.TablaTotal {
+
+  height: 200%;
+}
+
+.loader {
+  background: rgba(255, 255, 255, 0);
+  border: 4px solid #000000;
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  z-index: 2;
+}
+.ContentdorCarga {
+  padding-left: 45%;
+  background: linear-gradient(304deg, rgba(139, 184, 206, 0.877) 15%, rgba(177, 173, 233, 0.63) 53%, rgba(199, 226, 236, 0.76) 89%);
+  border: 0px ;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.FondoBl{
+position: fixed;
+height: 100%;
+width: 100%;
+
+}
+
+
+
+.center-rotate {
+  height: 100%;
+  position: relative;
+  background:#fcfcec ;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.cargando::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Cambia el valor alpha para ajustar la opacidad */
+  z-index: 2; /* Asegura que esté detrás de la imagen que rota */
+}
+
+.cargando {
+  position: fixed;
+  height: 50vw;
+  margin-left: 25vw;
+  margin-top: 0%;
+  transform-origin: center center;
+  z-index: 2;
+}
+
+canvas ,.derecha {
+    background-color: transparent !important;
+}
+
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+.PorTiempo {
+
+  height: 100%;
+  width: 100%;
+}
+
+.PorTiempo canvas {
+
+  height: 90% !important ;
+  width: 90% !important;
+}
+
+.Progre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+
+/* Estilos para los puntos */
+.dot {
+  animation: dotPulse 1s infinite;
+  animation-delay: 0s;
+}
+
+.dot-1 {
+  animation-delay: 0.2s;
+}
+
+.dot-2 {
+  animation-delay: 0.4s;
+}
+
+.dot-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes dotPulse {
+  0%, 20%, 100% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+
+
+.Top {
+
+  width: 70%;
+  height: 300px;
+  margin-left: 15%;
+
+}
+
+
+
+
+
+
